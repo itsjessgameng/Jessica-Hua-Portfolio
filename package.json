@@ -1,0 +1,21 @@
+{
+  "name": "jessicahua",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "6.8.0"
+  },
+  "dependencies": {
+    "foobar": "1.1.0",
+    "ejs": "2.3.3",
+    "express": "4.13.3",
+    "foreman": "2.0.0"
+  }
+}
