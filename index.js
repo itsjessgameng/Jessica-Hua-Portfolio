@@ -17,8 +17,12 @@ app.get('/project', function(request, response) {
 });
 
 app.get('/resume', function(request, response) {
-    response.sendFile(path.join(__dirname + '/pages/resume.html'))
+    response.sendFile(path.join(__dirname + '/resume.pdf'))
 });
+
+// app.get('/resume', function(request, response) {
+//     response.sendFile(path.join(__dirname + '/pages/resume.html'))
+// });
 
 app.get('/contact', function(request, response) {
     response.sendFile(path.join(__dirname + '/pages/contact.html'))
