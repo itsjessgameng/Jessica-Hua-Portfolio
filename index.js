@@ -17,7 +17,7 @@ app.get('/project', function(request, response) {
 });
 
 app.get('/resume', function(request, response) {
-    response.sendFile(path.join(__dirname + '/resume.pdf'))
+    response.sendFile(path.join(__dirname + '/Resume.pdf'))
 });
 
 // app.get('/resume', function(request, response) {
