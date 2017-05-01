@@ -16,6 +16,10 @@ app.get('/project', function(request, response) {
     response.sendFile(path.join(__dirname + '/pages/project.html'))
 });
 
+app.get('/writingsample', function(request, response) {
+    response.sendFile(path.join(__dirname + '/writingsample.pdf'))
+});
+
 app.get('/resume', function(request, response) {
     response.sendFile(path.join(__dirname + '/Resume.pdf'))
 });
