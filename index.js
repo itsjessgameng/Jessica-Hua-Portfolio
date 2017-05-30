@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var path = require('path');
 
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 5001));
 
 app.get('/', function(request, response) {
   response.sendFile(path.join(__dirname + '/pages/index.html'));
@@ -22,6 +22,14 @@ app.get('/writingsample', function(request, response) {
 
 app.get('/resume', function(request, response) {
     response.sendFile(path.join(__dirname + '/Resume.pdf'))
+});
+
+app.get('/iOS', function(request, response) {
+    response.sendFile(path.join(__dirname + '/pages/ios.html'))
+});
+
+app.get('/enterprise-web-app', function(request, response) {
+    response.sendFile(path.join(__dirname + '/pages/enterprise-web-app.html'))
 });
 
 // app.get('/resume', function(request, response) {
